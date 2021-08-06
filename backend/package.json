@@ -2,23 +2,28 @@
   "name": "grades-control-api",
   "version": "1.0.0",
   "description": "",
-  "main": "src/app.js",
+  "main": "src/index.js",
   "scripts": {
-    "start": "nodemon --experimental-modules ./src/app.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nodemon src/index.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^4.17.1",
-    "winston": "^3.2.1"
+    "mongoose": "^5.13.5",
+    "winston": "^3.2.1",
+    "socket.io": "^3.0.3"
+  },
+  "devDependencies": {
+    "@types/express": "^4.11.1",
+    "@types/mongoose": "^5.0.3",
+    "typescript": "^2.7.2"
   },
   "nodemonConfig": {
     "ignore": [
       "*.log",
       "*.json"
     ]
-  },
-  "type": "module"
+  }
 }
